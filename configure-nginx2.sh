@@ -19,8 +19,8 @@ cd /var/www/
 
 git clone https://github.com/mikecolbert/my_portfolio.git
 
-sudo cp --recursive /var/www/my_portfolio/ /var/www/html
+cp -r /var/www/my_portfolio/ /var/www/html
 
-sudo rm -R /var/www/html/.github
+sudo rm -R /var/www/html/.github/
 
 
