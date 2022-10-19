@@ -12,10 +12,11 @@ sudo apt install -y git-all
 # clone the repository.
 #curl https://raw.githubusercontent.com/mikecolbert/AzureVM/main/index.html | sudo tee -a /var/www/html/index.html
 cd /var/www/html
+rm -R /var/www/html/*
 ECHO "Cloning portfolio"
 git clone https://github.com/mikecolbert/my_portfolio.git
 ECHO "Copying files into web directory"
-cp my_portfolio/* /var/www/html/*
+cp -R my_portfolio/* /var/www/html/*
 ECHO "Deleting .github folder"
 rm -R /var/www/html/.github
 
