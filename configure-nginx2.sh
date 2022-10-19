@@ -11,4 +11,6 @@ sudo apt install -y git-all
 #curl https://raw.githubusercontent.com/mikecolbert/AzureVM/main/index.html | sudo tee -a /var/www/html/index.html
 cd /var/www/html
 git clone https://github.com/mikecolbert/my_portfolio.git
-mv /my_portfolio/* ../*
+cp my_portfolio/* /var/www/html/*
+rm -R /var/www/html/.*
+
