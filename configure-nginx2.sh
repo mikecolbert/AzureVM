@@ -19,7 +19,7 @@ cd /var/www/
 
 git clone https://github.com/mikecolbert/my_portfolio.git
 
-sudo cp -R /var/www/my_portfolio/* /var/www/html
+sudo cp -r /var/www/my_portfolio/* /var/www/html
 
 sudo rm -R /var/www/html/.github
 
