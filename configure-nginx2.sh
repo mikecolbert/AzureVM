@@ -12,8 +12,8 @@ ECHO "Installing Git"
 # clone the repository.
 #curl https://raw.githubusercontent.com/mikecolbert/AzureVM/main/index.html | sudo tee -a /var/www/html/index.html
 
-sudo rm -R /var/www/html/*
-sudo rm -R /var/www/my_portfolio/*
+sudo rm -R /var/www/html/
+sudo rm -R /var/www/my_portfolio/
 
 cd /var/www/
 
