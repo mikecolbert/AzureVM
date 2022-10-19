@@ -13,7 +13,7 @@ ECHO "Installing Git"
 #curl https://raw.githubusercontent.com/mikecolbert/AzureVM/main/index.html | sudo tee -a /var/www/html/index.html
 
 sudo rm -rf /var/www/html/
-sudo rm -rf /var/www/my_portfolio/
+sudo rm -rf /var/www/my_portfolio
 
 cd /var/www/
 
