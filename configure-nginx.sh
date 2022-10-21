@@ -12,7 +12,7 @@ sudo systemctl stop nginx
 
 ###update sites-available default config file to turn Nginx SSI on
 #delete the existing default web config file
-sudo rm -rf /etc/nginx/sites-available/default
+#sudo rm -rf /etc/nginx/sites-available/default
 #copy down the new config file from github and pipe it to 'default'
 #sudo curl https://raw.githubusercontent.com/mikecolbert/AzureVM/main/default | sudo tee -a /etc/nginx/sites-available/default
 
