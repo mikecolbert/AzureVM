@@ -7,6 +7,15 @@ sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
 sudo apt-get install -y nginx
 sudo apt install -y git-all 
 
+# stop the nginx service
+sudo systemctl stop nginx
+
+###update sites-available default config file to turn Nginx SSI on
+#delete the existing default web config file
+sudo rm -rf /etc/nginx/sites-available/default
+#copy down the new config file from github and pipe it to 'default'
+sudo curl https://raw.githubusercontent.com/mikecolbert/AzureVM/main/default | sudo tee -a /etc/nginx/sites-available/default
+
 # remove any existing files or folders in the root directory 
 sudo rm -rf /var/www/html/
 
@@ -26,3 +35,7 @@ sudo cp -r /var/www/HW6_website/ /var/www/html
 # remove the .github folder and all subfolders and files from the root web directory
 sudo rm -rf /var/www/html/.git/
 sudo rm -rf /var/www/html/README.md
+
+#start nginx
+sudo systemctl start nginx
+
