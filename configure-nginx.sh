@@ -18,10 +18,11 @@ sudo rm -rf /var/www/HW6_website
 cd /var/www/
 
 # clone the repository - it is now in /var/www/HW6_website
-git clone https://github.com/mikecolbert/HW6_website.git
+sudo git clone https://github.com/mikecolbert/HW6_website.git
 
 # copy recursively all files and folders into the root html directory for Nginx
 sudo cp -r /var/www/HW6_website/ /var/www/html
 
 # remove the .github folder and all subfolders and files from the root web directory
-sudo rm -rf /var/www/html/.github/
+sudo rm -rf /var/www/html/.git/
+sudo rm -rf /var/www/html/README.md
