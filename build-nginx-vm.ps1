@@ -1,4 +1,4 @@
-#Bash script to automate creating a virtual machine with Nginx
+#PowerShell script to automate creating a virtual machine with Nginx
 #Runs from the Windows Power Shell and requires Azure CLI to be installed on Windows.
 
 ##### variables to configure environment
